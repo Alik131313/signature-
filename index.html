@@ -62,6 +62,11 @@ body {
 main, .wrap, .container {
     margin-top: 0 !important;
 }
+
+/* Patch: remove internal warning/notes for public colleague-facing version */
+.warning, .alert, .notice, .note, .hint, .important, .internal-note {
+    display: none !important;
+}
 </style>
 </head>
 <body>
@@ -135,8 +140,7 @@ main, .wrap, .container {
           <div class="signature-frame">
             <div id="signaturePreview"></div>
           </div>
-          <div class="notice">Важно: в некоторых почтовых клиентах после вставки можно вручную чуть поправить масштаб логотипа. Для массового внедрения лучше использовать этот шаблон как единую основу, а не давать коллегам собирать подпись руками.</div>
-          <pre class="codebox" id="codebox"></pre>
+<pre class="codebox" id="codebox"></pre>
         </div>
       </div>
     </div>
